@@ -14,7 +14,7 @@ const Skills = () => {
           <div className="flex-grow p-4 -mx-5">
             <div className="grid gap-6 md:grid-cols-2">
               {certificates.map((cert) => (
-                <div className="col-span-2 p-2 bg-gray-200 rounded-lg lg:col-span-1 ">
+                <div className="col-span-2 p-2 bg-gray-200 rounded-lg dark:bg-slate-700 lg:col-span-1 ">
                   <a>
                     <CertificateCard certificate={cert} />
                   </a>

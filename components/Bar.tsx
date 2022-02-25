@@ -7,9 +7,9 @@ const Bar: FunctionComponent<{ value: Skill }> = ({
 }) => {
   const bar_width = `${level}%`;
   return (
-    <div className="my-2 text-white bg-gray-300 rounded-full dark:bg-black-500">
+    <div className="my-2 text-white bg-gray-300 rounded-full dark:bg-slate-700">
       <div
-        className="flex items-center px-4 py-1 rounded-full bg-gradient-to-r from-green to-blue-500"
+        className="flex items-center px-4 py-1 rounded-full bg-gradient-to-r to-cyan-500 from-slate-700"
         style={{
           width: bar_width,
         }}

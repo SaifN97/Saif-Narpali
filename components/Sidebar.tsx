@@ -6,8 +6,14 @@ import {
 } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
+import { useTheme } from "next-themes";
 
 const Sidebar = () => {
+  const { theme, setTheme } = useTheme();
+
+  const changeMode = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
   return (
     <div>
       <img
@@ -22,11 +28,11 @@ const Sidebar = () => {
         Narpali
       </h1>
 
-      <p className="px-2 py-1 my-3 bg-gray-200 rounded-full">
+      <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-slate-700">
         Frontend Web Developer
       </p>
       <a
-        className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full"
+        className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-slate-700"
         href="#"
       >
         <GiTie /> Download Resume
@@ -48,7 +54,7 @@ const Sidebar = () => {
         </a>
       </div>
 
-      <div className="py-4 my-5 -m-4 space-y-2 bg-gray-200">
+      <div className="py-4 my-5 -m-4 space-y-2 bg-gray-200 dark:bg-slate-700">
         <div className="flex items-center justify-center space-x-2">
           <GoLocation />
           <span>Mumbai, India</span>
@@ -64,11 +70,11 @@ const Sidebar = () => {
         Email me
       </button>
       <button
-        onClick={() => {}}
+        onClick={changeMode}
         className="w-8/12 px-5 py-2 my-4 text-white bg-black rounded-full cursor-pointer bg-gradient-to-r from-teal-500 to-slate-700 focus:outline-none hover:scale-105 "
       >
         {/* //TODO remove bg black */}
-        Change Theme
+        Change Mode
       </button>
     </div>
   );
