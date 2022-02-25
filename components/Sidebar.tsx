@@ -35,16 +35,16 @@ const Sidebar = () => {
       {/* Socials */}
       <div className="flex items-center justify-around w-9/12 mx-auto text-teal-600 lg:w-full">
         <a href="">
-          <AiFillGithub className="w-8 h-8" />
+          <AiFillGithub className="w-8 h-8 hover:text-slate-700" />
         </a>
         <a href="">
-          <AiFillLinkedin className="w-8 h-8" />
+          <AiFillLinkedin className="w-8 h-8 hover:text-slate-700" />
         </a>
         <a href="">
-          <AiFillTwitterCircle className="w-8 h-8" />
+          <AiFillTwitterCircle className="w-8 h-8 hover:text-slate-700" />
         </a>
         <a href="">
-          <AiFillInstagram className="w-8 h-8" />
+          <AiFillInstagram className="w-8 h-8 hover:text-slate-700" />
         </a>
       </div>
 
