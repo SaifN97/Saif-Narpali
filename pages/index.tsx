@@ -1,7 +1,5 @@
-import React from "react";
-
-const Home = () => {
-  return <div>Hello from tailwind and nextjs</div>;
+const About = () => {
+  return <div className="p-4">ABOUT</div>;
 };
 
-export default Home;
+export default About;
