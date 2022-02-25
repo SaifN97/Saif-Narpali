@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <main className="grid h-screen grid-cols-12 gap-6 px-8 my-12 lg:px-48 lg:items-center lg:justify-center sm:px-20 md:px-32">
+    <main className="grid grid-cols-12 gap-6 px-5 my-14 lg:mb-0 md:mb-16 sm:px-20 md:px-32 lg:px-36 xl:px-48">
       <div className="col-span-12 p-4 text-center bg-white border border-gray-200 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 lg:col-span-3 rounded-2xl">
         <Sidebar />
       </div>

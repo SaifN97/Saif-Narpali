@@ -12,8 +12,9 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap"
             rel="stylesheet"
           />
+          <title>Saif Narpali | Web Dev</title>
         </Head>
-        <body className="bg-fixed bg-gradient-to-r from-slate-700 to-teal-500 dark:from-black-500 dark:to-black-700">
+        <body className="bg-fixed bg-gradient-to-tr from-slate-700 to-teal-500">
           <Main />
           <NextScript />
         </body>
