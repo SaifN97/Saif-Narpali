@@ -16,7 +16,7 @@ const About: NextPage = () => {
       <div className="flex-grow p-4 my-4 -mx-5">
         <div className="grid gap-6 md:grid-cols-2">
           {services.map((service) => (
-            <div className="col-span-2 p-2 bg-gray-200 rounded-lg dark:bg-slate-700 lg:col-span-1 ">
+            <div className="col-span-2 p-2 bg-gray-200 rounded-lg dark:bg-black-500 lg:col-span-1 ">
               <ServiceCard service={service} />
             </div>
           ))}

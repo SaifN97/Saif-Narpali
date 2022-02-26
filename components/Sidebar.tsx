@@ -7,6 +7,7 @@ import {
 import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 
 const Sidebar = () => {
   const { theme, setTheme } = useTheme();
@@ -16,8 +17,10 @@ const Sidebar = () => {
   };
   return (
     <div>
-      <img
-        src="https://avatars.githubusercontent.com/u/60750929?v=4"
+      <Image
+        width="128px"
+        height="128px"
+        src="/images/me.jpg"
         alt="Saif Narpali"
         className="w-32 h-32 mx-auto rounded-full"
       />
@@ -28,11 +31,11 @@ const Sidebar = () => {
         Narpali
       </h1>
 
-      <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-slate-700">
+      <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-black-500">
         Frontend Web Developer
       </p>
       <a
-        className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-slate-700"
+        className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-black-500"
         href="#"
       >
         <GiTie /> Download Resume
@@ -54,7 +57,7 @@ const Sidebar = () => {
         </a>
       </div>
 
-      <div className="py-4 my-5 -m-4 space-y-2 bg-gray-200 dark:bg-slate-700">
+      <div className="py-4 my-5 -m-4 space-y-2 bg-gray-200 dark:bg-black-500">
         <div className="flex items-center justify-center space-x-2">
           <GoLocation />
           <span>Mumbai, India</span>
