@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { NextPage } from "next";
+import Head from "next/head";
 import { fadeInUp, routeFade, stagger } from "../animations";
 import ServiceCard from "../components/ServiceCard";
 import { services } from "../data";
@@ -13,6 +14,9 @@ const About: NextPage = () => {
       animate="visible"
       exit="exit"
     >
+      <Head>
+        <title>Saif Narpali | Web Developer</title>
+      </Head>
       <h6 className="my-3 text-xl font-medium">
         Hi, I’m Saif. I’m a highly passionate self taught web developer with
         love for turning designs into fully functional responsive websites.

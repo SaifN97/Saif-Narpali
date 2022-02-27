@@ -3,6 +3,7 @@ import { fadeInUp, routeFade } from "../animations";
 import CertificateCard from "../components/CertificateCard";
 import { certificates, languages, tools } from "../data";
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 const Skills = () => {
   return (
@@ -13,6 +14,9 @@ const Skills = () => {
       animate="visible"
       exit="exit"
     >
+      <Head>
+        <title>Saif Narpali | Web Developer</title>
+      </Head>
       {/* //! Education & Experience */}
       <div className="grid gap-6 ">
         <motion.div variants={fadeInUp} initial="initial" animate="animate">

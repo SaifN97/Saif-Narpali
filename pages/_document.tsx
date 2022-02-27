@@ -6,14 +6,21 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <link
+            rel="shortcut icon"
+            href="/me.ico"
+            type="image/x-icon"
+            className="rounded-full"
+          />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
           <link
             href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap"
             rel="stylesheet"
           />
+          <title>Saif Narpali | Web Developer</title>
         </Head>
-        <body className="bg-fixed bg-gradient-to-tr from-slate-700 to-teal-500 dark:bg-gradient-to-tl dark:from-black dark:to-black-100">
+        <body className="bg-fixed bg-gradient-to-tr from-slate-500 to-teal-400 dark:bg-gradient-to-tl dark:from-black dark:to-black-100">
           <Main />
           <NextScript />
         </body>

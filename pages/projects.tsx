@@ -5,10 +5,13 @@ import ProjectNavbar from "../components/ProjectNavbar";
 import { projects as projectsData } from "../data";
 import { Category } from "../types";
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 const Projects = () => {
   const [projects, setProjects] = useState(projectsData);
   const [active, setActive] = useState("all");
+
+  const [showDetail, setShowDetail] = useState<null | Number>(null);
 
   const handleFilterCategory = (category: Category | "all") => {
     if (category === "all") {
@@ -34,6 +37,9 @@ const Projects = () => {
       animate="visible"
       exit="exit"
     >
+      <Head>
+        <title>Saif Narpali | Web Developer</title>
+      </Head>
       <ProjectNavbar
         handleFilterCategory={handleFilterCategory}
         active={active}
@@ -51,7 +57,12 @@ const Projects = () => {
             key={project.id}
             className="col-span-12 p-2 bg-gray-200 rounded-lg dark:bg-black-500 sm:col-span-6 lg:col-span-4"
           >
-            <ProjectCard project={project} key={project.id} />
+            <ProjectCard
+              project={project}
+              key={project.id}
+              setShowDetail={setShowDetail}
+              showDetail={showDetail}
+            />
           </motion.div>
         ))}
         {/* </AnimatePresence> */}

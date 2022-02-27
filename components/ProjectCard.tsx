@@ -10,6 +10,8 @@ import { MdClose } from "react-icons/md";
 
 const ProjectCard: FunctionComponent<{
   project: IProject;
+  showDetail: null | Number;
+  setShowDetail: (id: Number | null) => void;
 }> = ({
   project: {
     name,
@@ -20,8 +22,9 @@ const ProjectCard: FunctionComponent<{
     key_techs,
     id,
   },
+  setShowDetail,
+  showDetail,
 }) => {
-  const [showDetail, setShowDetail] = useState(false);
   return (
     <>
       <Image
@@ -32,13 +35,13 @@ const ProjectCard: FunctionComponent<{
         height={150}
         objectFit="cover"
         objectPosition="top"
-        onClick={() => setShowDetail(true)}
+        onClick={() => setShowDetail(id)}
         className="rounded-md cursor-pointer"
       />
 
       <p className="my-2 text-center">{name}</p>
 
-      {showDetail && (
+      {showDetail === id && (
         <div className="fixed left-0 z-10 grid w-full h-auto p-2 overflow-hidden text-black bg-gray-100 border border-gray-200 rounded-tl-3xl rounded-br-3xl top-40 md:p-10 dark:bg-black-200 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 dark:text-gray-100 md:grid-cols-2 gap-x-12 dark:shadow-custom-dark dark:border-slate-700 ">
           <motion.div variants={stagger} initial="initial" animate="animate">
             <motion.div
@@ -106,7 +109,7 @@ const ProjectCard: FunctionComponent<{
 
           <button
             className="absolute p-1 bg-gray-200 rounded-full top-3 right-3 focus:outline-none dark:bg-black-200"
-            onClick={() => setShowDetail(false)}
+            onClick={() => setShowDetail(null)}
           >
             <MdClose size={30} />
           </button>
