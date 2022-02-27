@@ -1,10 +1,18 @@
+import { motion } from "framer-motion";
 import { NextPage } from "next";
+import { fadeInUp, routeFade, stagger } from "../animations";
 import ServiceCard from "../components/ServiceCard";
 import { services } from "../data";
 
 const About: NextPage = () => {
   return (
-    <div className="flex flex-col flex-grow p-6 pt-1">
+    <motion.div
+      className="flex flex-col flex-grow p-6 pt-1"
+      variants={routeFade}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
       <h6 className="my-3 text-xl font-medium">
         Hi, I’m Saif. I’m a highly passionate self taught web developer with
         love for turning designs into fully functional responsive websites.
@@ -14,15 +22,24 @@ const About: NextPage = () => {
         and do interesting things that matter.
       </h6>
       <div className="flex-grow p-4 my-4 -mx-5">
-        <div className="grid gap-6 md:grid-cols-2">
+        <motion.div
+          className="grid gap-6 md:grid-cols-2"
+          variants={stagger}
+          animate="animate"
+          initial="initial"
+        >
           {services.map((service) => (
-            <div className="col-span-2 p-2 bg-gray-200 rounded-lg dark:bg-black-500 lg:col-span-1 ">
+            <motion.div
+              key={service.title}
+              variants={fadeInUp}
+              className="col-span-2 p-2 bg-gray-200 rounded-lg dark:bg-black-500 lg:col-span-1 "
+            >
               <ServiceCard service={service} />
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

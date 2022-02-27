@@ -1,15 +1,21 @@
-import Link from "next/link";
 import Bar from "../components/Bar";
+import { fadeInUp, routeFade } from "../animations";
 import CertificateCard from "../components/CertificateCard";
-import ServiceCard from "../components/ServiceCard";
 import { certificates, languages, tools } from "../data";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <div className="px-6 py-2">
+    <motion.div
+      className="px-6 py-2"
+      variants={routeFade}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
       {/* //! Education & Experience */}
       <div className="grid gap-6 ">
-        <div>
+        <motion.div variants={fadeInUp} initial="initial" animate="animate">
           <h5 className="text-2xl font-bold ">Certifications</h5>
           <div className="flex-grow p-4 -mx-5">
             <div className="grid gap-6 md:grid-cols-2">
@@ -22,7 +28,7 @@ const Skills = () => {
               ))}
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       {/*Languages & Tools */}
@@ -45,7 +51,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
