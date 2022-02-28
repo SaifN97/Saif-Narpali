@@ -69,8 +69,9 @@ const Projects = () => {
           ))}
         </motion.div>
         <a
-          className="flex w-full md:w-1/2 lg:w-1/3  mt-5 mx-auto  items-center justify-center gap-3 px-2 py-2 text-white bg-black rounded-full cursor-pointer bg-gradient-to-r to-teal-500 from-slate-700 hover:scale-105 transition-all duration-100 ease-in-out focus:outline-none"
-          href="#"
+          className="flex items-center justify-center w-full gap-3 px-2 py-2 mx-auto mt-5 text-white transition-all duration-100 ease-in-out bg-black rounded-full cursor-pointer md:w-1/2 lg:w-1/3 bg-gradient-to-r to-teal-500 from-slate-700 hover:scale-105 focus:outline-none"
+          href="https://github.com/SaifN97"
+          target="_blank"
         >
           <FaGithub /> View More on Github
         </a>

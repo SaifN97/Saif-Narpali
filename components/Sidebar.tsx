@@ -36,7 +36,8 @@ const Sidebar = () => {
       </p>
       <a
         className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-black-500"
-        href="#"
+        href="/saifResume.pdf"
+        download
       >
         <GiTie /> Download Resume
       </a>
@@ -73,7 +74,7 @@ const Sidebar = () => {
         Email Me
       </button>
 
-      <div className=" flex items-center my-5 justify-center w-full">
+      <div className="flex items-center justify-center w-full my-5 ">
         <label htmlFor="toggleB" className="flex items-center cursor-pointer">
           {/*  toggle  */}
           <div className="relative">
@@ -85,12 +86,12 @@ const Sidebar = () => {
               onClick={changeMode}
             />
             {/*  line  */}
-            <div className="block bg-slate-700 w-14 h-8 rounded-full"></div>
+            <div className="block h-8 rounded-full bg-slate-700 w-14"></div>
             {/*  dot */}
-            <div className="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
+            <div className="absolute w-6 h-6 transition bg-white rounded-full dot left-1 top-1"></div>
           </div>
           {/* label  */}
-          <div className=" ml-2 text-slate-700 font-medium dark:text-white">
+          <div className="ml-2 font-medium text-slate-700 dark:text-white">
             {theme === "light" ? "Dark Mode" : "Light Mode"}
           </div>
         </label>

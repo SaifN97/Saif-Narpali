@@ -16,7 +16,6 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap"
             rel="stylesheet"
           />
-          <title>Saif Narpali | Web Developer</title>
         </Head>
         <body className="bg-fixed bg-gradient-to-tr from-slate-500 to-teal-400 dark:bg-gradient-to-tl dark:from-black dark:to-black-100">
           <Main />

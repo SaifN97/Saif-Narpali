@@ -11,11 +11,15 @@
 
 ### Preview
 
-![Finished Preview of HomeScreen](/public/preview.jpg)
+![Finished Preview of About](/public/preview.jpg)
+
+![Finished Preview of Skills](/public/skillsPreview.jpg)
+
+![Finished Preview of Projects](/public/projectsPreview.jpg)
 
 ### Links
 
-- Live Site URL: [Portfolio](https://)
+- Live Site URL: [Portfolio](https://saif-narpali.vercel.app)
 
 ## My process
 
