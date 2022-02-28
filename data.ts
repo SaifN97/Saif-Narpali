@@ -61,27 +61,27 @@ export const languages: Skill[] = [
   {
     Icon: BsCircleFill,
     name: "CSS",
-    level: "80",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Javascript",
-    level: "65",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "React",
-    level: "70",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Next.js",
-    level: "60",
+    level: "90",
   },
   {
     Icon: BsCircleFill,
     name: "TailwindCSS",
     level: "70",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Javascript",
+    level: "80",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "React",
+    level: "80",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Next.js",
+    level: "60",
   },
 ];
 
@@ -89,12 +89,22 @@ export const tools: Skill[] = [
   {
     Icon: BsCircleFill,
     name: "VsCode",
-    level: "85",
+    level: "90",
   },
   {
     Icon: BsCircleFill,
     name: "Git",
-    level: "50",
+    level: "65",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Chrome Dev Tools",
+    level: "80",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "TypeScript",
+    level: "40",
   },
   {
     Icon: BsCircleFill,
@@ -104,7 +114,7 @@ export const tools: Skill[] = [
   {
     Icon: BsCircleFill,
     name: "Windows",
-    level: "80",
+    level: "90",
   },
 ];
 
@@ -117,106 +127,202 @@ export const projects: IProject[] = [
     image_path: "/images/next/amazon.jpg",
     deployed_url: "https://amazon-2-0-saifn97.vercel.app",
     github_url: "https://github.com/SaifN97/amazon-2.0",
-    category: ["Next.js"],
+    category: ["Next.js", "TailwindCSS", "API"],
     key_techs: ["React.js", "Next.js", "Stripe", "FakeStoreAPI", "TailwindCSS"],
   },
+
   {
     id: 1,
+    name: "NotYouTube",
+    image_path: "/images/react/notyoutube.jpg",
+    deployed_url: "https://not-youtube.vercel.app",
+    github_url: "https://github.com/SaifN97/NotYoutube",
+    category: ["React.js", "Redux", "API"],
+    description: "NotYouTube is almost YouTube powered using YouTube API",
+    key_techs: ["React", "Redux", "Axios", "Firebase", "YouTubeAPI"],
+  },
+
+  {
+    id: 2,
+    name: "LinkedIn Clone",
+    image_path: "/images/react/linkedin.jpg",
+    deployed_url: "https://clonelinkedinsn.netlify.app/",
+    github_url: "https://github.com/SaifN97/linkedin-clone",
+    category: ["React.js", "Redux", "FullStack"],
+    description:
+      "This is was a clone attempt of LinkedIn.com with firebase OAuth",
+    key_techs: ["React", "Redux", "Firebase"],
+  },
+
+  {
+    id: 3,
     name: "Graph blog",
-    //TODO add data
     image_path: "/images/react/graphcms.jpg",
     deployed_url: "https://graph-cms-blog-nu.vercel.app",
     github_url: "https://github.com/SaifN97/graph-cms-blog",
-    category: ["Next.js"],
+    category: ["Next.js", "TailwindCSS", "FullStack"],
     description:
       "This is a blogging website backed up user friendly content management system using GraphQL on the backend",
     key_techs: ["React.js", "Next.js", "GraphQL", "TailwindCSS"],
   },
 
   {
-    id: 2,
+    id: 4,
     name: "ShareMe",
     image_path: "/images/react/shareme.jpg",
     deployed_url: "https://nshareme.netlify.app",
     github_url: "https://github.com/SaifN97/ShareMe",
-    category: ["React.js", "TailwindCSS", "Sanity"],
+    category: ["React.js", "TailwindCSS", "FullStack"],
     description:
       "ShareMe is a Social Media app similar to Pinterest for sharing ideas with photos and illustrations",
     key_techs: ["React.js", "SanityCMS", "TailwindCSS"],
   },
 
   {
-    id: 3,
-    name: "NotYouTube",
-    image_path: "/images/react/notyoutube.jpg",
-    deployed_url: "https://not-youtube.vercel.app",
-    github_url: "https://github.com/SaifN97/NotYoutube",
-    category: ["React.js", "Redux"],
-    description: "NotYouTube is almost YouTube powered using YouTube API",
-    key_techs: ["React", "Redux", "Axios", "Firebase", "YouTubeAPI"],
+    id: 5,
+    name: "Medium 2.0",
+    image_path: "/images/next/medium.jpg",
+    deployed_url: "https://medium-2-0-saifn97.vercel.app/",
+    github_url: "https://github.com/SaifN97/medium-2.0",
+    category: ["Next.js", "TailwindCSS", "FullStack"],
+    description: "This is a clone attempt website inspired by medium.com",
+    key_techs: ["Next.js", "Sanity", "TailwindCSS"],
   },
 
   {
-    id: 4,
-    name: "LinkedIn Clone",
-    image_path: "/images/react/linkedin.jpg",
-    deployed_url: "https://clonelinkedinsn.netlify.app/",
-    github_url: "https://github.com/SaifN97/linkedin-clone",
-    category: ["React.js", "Redux"],
+    id: 6,
+    name: "Spotify 2.0",
+    image_path: "/images/next/spotify.jpg",
+    deployed_url: "https://spotify-2-0-eight.vercel.app",
+    github_url: "https://github.com/SaifN97/Spotify-2.0",
+    category: ["Next.js", "TailwindCSS", "API"],
     description:
-      "This is was a clone attempt of LinkedIn.com with firebase OAuth",
-    key_techs: ["React", "Redux", "Firebase"],
+      "This a web app provides remote access of your spotify account using Spotify API",
+    key_techs: ["Next.js", "Recoil", "SpotifyAPI", "TailwindCSS"],
   },
+
   {
-    id: 5,
+    id: 7,
+    name: "Cryptoverse",
+    image_path: "/images/react/cryptoverse.jpg",
+    github_url: "https://github.com/SaifN97/cryptoverse",
+    deployed_url: "https://sn-cryptoverse.netlify.app/",
+    category: ["React.js", "Redux", "API"],
+    description:
+      "This is a web app for live Cryptocurrency updates and news powered by CryptoAPI from RapidAPI.com",
+    key_techs: ["React", "API", "Redux Toolkit", "AntDesign"],
+  },
+
+  {
+    id: 8,
+    name: "Gericht Restaurant",
+    image_path: "/images/react/geritch.jpg",
+    deployed_url: "https://geritch-resto.netlify.app/",
+    github_url: "https://github.com/SaifN97/Geritch-restaurant-brochure-site",
+    category: ["React.js", "TailwindCSS"],
+    description:
+      "This is a fully responsive demo brochure site for restaurants made with React.js and TailwindCSS",
+    key_techs: ["React.js", "TailwindCSS"],
+  },
+
+  {
+    id: 9,
+    name: "Realtor",
+    image_path: "/images/next/realtor.jpg",
+    deployed_url: "https://realtor-saifn97.vercel.app/",
+    github_url: "https://github.com/SaifN97/Realtor",
+    category: ["Next.js", "API"],
+    description:
+      "Realor is a demo real estate platform to buy or rent your dream home powered by Bayut API",
+    key_techs: ["Next.js", "RapidAPI", "ChakraUI", "Bayut API"],
+  },
+
+  {
+    id: 10,
+    name: "GPT-3 Open AI",
+    image_path: "/images/react/gpt3.jpg",
+    deployed_url: "https://blogopenaigpt3.netlify.app/",
+    github_url: "https://github.com/SaifN97/Open-AiIGPT3-landing-page",
+    category: ["React.js"],
+    description: "This is a static landing page for GPT-3 OpenAI",
+    key_techs: ["React", "SCSS"],
+  },
+
+  {
+    id: 11,
     name: "Blogr",
     image_path: "/images/frontendmentor/blogr.jpg",
     deployed_url: "https://reverent-fermi-c94e80.netlify.app/",
     github_url: "https://github.com/SaifN97/Blogr-landing-page",
     category: ["Vanilla", "FrontendMentor"],
-    description: "Hey, You are seeing this project now...Enjoy",
+    description: "This was a challenge project from frontendMentor.io",
     key_techs: ["HTML", "SCSS", "JavaScript"],
   },
+
   {
-    id: 6,
-    name: "Cryptoverse",
-    image_path: "/images/react/cryptoverse.jpg",
-    github_url: "https://github.com/SaifN97/cryptoverse",
-    deployed_url: "https://sn-cryptoverse.netlify.app/",
-    category: ["React.js"],
-    description: "Hey, You are seeing this project now...Enjoy",
-    key_techs: ["React", "API", "AntDesign"],
+    id: 12,
+    name: "SunnySide",
+    image_path: "/images/frontendmentor/sunnyside.jpg",
+    deployed_url: "https://vigilant-euler-c3932b.netlify.app/",
+    github_url: "https://github.com/SaifN97/Sunnyside-agency-landing-page",
+    category: ["Vanilla", "FrontendMentor"],
+    description: "This was a challenge project from frontendMentor.io",
+    key_techs: ["HTML", "SCSS", "JavaScript", "CSS Custom properties"],
   },
+
   {
-    id: 7,
-    name: "Spotify 2.0",
-    image_path: "/images/react/linkedin.jpg",
-    deployed_url: "spotify-2-0-eight.vercel.app",
-    github_url: "https://github.com/SaifN97/Spotify-2.0",
-    category: ["Next.js"],
-    description:
-      "This a web app provides remote access of your spotify account using Spotify API",
-    key_techs: ["React", "Next.js", "Recoil", "SpotifyAPI", "TailwindCSS"],
-  },
-  {
-    id: 8,
+    id: 13,
     name: "Space Tourism",
     image_path: "/images/frontendmentor/space.jpg",
     deployed_url: "https://saifn97-space-tourism.netlify.app/",
     github_url: "https://github.com/SaifN97/Space-tourism-multipage-website",
-    category: ["Vanilla"],
+    category: ["Vanilla", "FrontendMentor"],
     description: "This was a challenge project from FrontendMentor.io",
     key_techs: ["HTML", "SCSS", "JavaScript", "CSS Custom properties"],
   },
+
   {
-    id: 9,
+    id: 14,
     name: "Huddle",
-    image_path: "/images/frontendmentor/huddle.jpg",
+    image_path: "/images/frontendmentor/huddle-dark.jpg",
     deployed_url: "https://distracted-booth-c13b35.netlify.app/",
     github_url:
       "https://github.com/SaifN97/Huddle-landing-page-with-curved-sections",
-    category: ["Vanilla"],
+    category: ["Vanilla", "FrontendMentor"],
     description: "This was a challenge project from FrontendMentor.io",
+    key_techs: ["HTML", "SCSS", "JavaScript", "CSS Custom properties"],
+  },
+
+  {
+    id: 15,
+    name: "Insure",
+    image_path: "/images/frontendmentor/insure.jpg",
+    deployed_url: "https://festive-galileo-1ea9f6.netlify.app/",
+    github_url: "https://github.com/SaifN97/Insure-landing-page",
+    category: ["Vanilla", "FrontendMentor"],
+    description: "This was a challenge project from frontendMentor.io",
+    key_techs: ["HTML", "SCSS", "JavaScript", "CSS Custom properties"],
+  },
+
+  {
+    id: 16,
+    name: "Flyo",
+    image_path: "/images/frontendmentor/fylo-dark.jpg",
+    deployed_url: "https://sleepy-euclid-89fe58.netlify.app/",
+    github_url: "https://github.com/SaifN97/Fylo-dark-theme-landing-page",
+    category: ["Vanilla", "FrontendMentor"],
+    description: "This was a challenge project from frontendMentor.io",
+    key_techs: ["HTML", "SCSS", "JavaScript", "CSS Custom properties"],
+  },
+
+  {
+    id: 17,
+    name: "Clipboard",
+    image_path: "/images/frontendmentor/clipboard.jpg",
+    deployed_url: "https://priceless-lamarr-be16c6.netlify.app/",
+    github_url: "https://github.com/SaifN97/Clipboard-landing-page",
+    category: ["Vanilla", "FrontendMentor"],
+    description: "This was a challenge project from frontendMentor.io",
     key_techs: ["HTML", "SCSS", "JavaScript", "CSS Custom properties"],
   },
 ];

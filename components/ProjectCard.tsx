@@ -36,7 +36,7 @@ const ProjectCard: FunctionComponent<{
         objectFit="cover"
         objectPosition="top"
         onClick={() => setShowDetail(id)}
-        className="rounded-md cursor-pointer"
+        className="rounded-md cursor-pointer "
       />
 
       <p className="my-2 text-center">{name}</p>
@@ -51,13 +51,12 @@ const ProjectCard: FunctionComponent<{
               <Image
                 src={image_path}
                 alt={name}
-                className="overflow-hidden"
+                className="overflow-hidden rounded-tr-2xl rounded-bl-2xl"
                 layout="responsive"
                 width={300}
                 height={150}
                 objectFit="cover"
                 objectPosition="center"
-                className="rounded-tr-2xl rounded-bl-2xl"
               />
             </motion.div>
             <motion.div
@@ -66,12 +65,14 @@ const ProjectCard: FunctionComponent<{
             >
               <a
                 href={github_url}
+                target="_blank"
                 className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-300 rounded-sm dark:bg-black-500 rounded-tr-2xl rounded-bl-2xl"
               >
                 <AiFillGithub /> <span>Github</span>
               </a>
               <a
                 href={deployed_url}
+                target="_blank"
                 className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-300 rounded-sm rounded-tr-2xl rounded-bl-2xl dark:bg-black-500"
               >
                 <FaEye /> <span>View Live</span>

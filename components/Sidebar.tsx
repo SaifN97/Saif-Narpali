@@ -43,16 +43,16 @@ const Sidebar = () => {
 
       {/* Socials */}
       <div className="flex items-center justify-around w-9/12 mx-auto text-teal-600 lg:w-full">
-        <a href="">
+        <a href="https://github.com/SaifN97" target="_blank">
           <AiFillGithub className="w-8 h-8 hover:text-slate-700" />
         </a>
-        <a href="">
+        <a href="https://www.linkedin.com/in/heysaifnarpali/ " target="_blank">
           <AiFillLinkedin className="w-8 h-8 hover:text-slate-700" />
         </a>
-        <a href="">
+        <a href="https://twitter.com/NarpaliSaif" target="_blank">
           <AiFillTwitterCircle className="w-8 h-8 hover:text-slate-700" />
         </a>
-        <a href="">
+        <a href="https://www.instagram.com/saif.codes_/" target="_blank">
           <AiFillInstagram className="w-8 h-8 hover:text-slate-700" />
         </a>
       </div>
@@ -67,18 +67,34 @@ const Sidebar = () => {
       </div>
 
       <button
-        className="w-8/12 px-5 py-2 text-white bg-black rounded-full cursor-pointer bg-gradient-to-r from-teal-500 to-slate-700 hover:scale-105 focus:outline-none"
-        onClick={() => window.open("mailto:code.sumax@gmail.com")}
+        className="w-8/12 px-5 py-2 text-white transition-all duration-100 ease-in-out bg-black rounded-full cursor-pointer bg-gradient-to-r from-teal-500 to-slate-700 hover:scale-105 focus:outline-none"
+        onClick={() => window.open("mailto:heysaif01@gmail.com")}
       >
-        Email me
+        Email Me
       </button>
-      <button
-        onClick={changeMode}
-        className="w-8/12 px-5 py-2 my-4 text-white bg-black rounded-full cursor-pointer bg-gradient-to-r from-teal-500 to-slate-700 focus:outline-none hover:scale-105 "
-      >
-        {/* //TODO remove bg black */}
-        Change Mode
-      </button>
+
+      <div className=" flex items-center my-5 justify-center w-full">
+        <label htmlFor="toggleB" className="flex items-center cursor-pointer">
+          {/*  toggle  */}
+          <div className="relative">
+            {/*  input  */}
+            <input
+              type="checkbox"
+              id="toggleB"
+              className="sr-only"
+              onClick={changeMode}
+            />
+            {/*  line  */}
+            <div className="block bg-slate-700 w-14 h-8 rounded-full"></div>
+            {/*  dot */}
+            <div className="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
+          </div>
+          {/* label  */}
+          <div className=" ml-2 text-slate-700 font-medium dark:text-white">
+            {theme === "light" ? "Dark Mode" : "Light Mode"}
+          </div>
+        </label>
+      </div>
     </div>
   );
 };

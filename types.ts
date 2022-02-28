@@ -30,7 +30,8 @@ export type Category =
   | "Vanilla"
   | "React.js"
   | "Next.js"
+  | "API"
   | "Redux"
-  | "Sanity"
-  | "FrontendMentor"
-  | "TailwindCSS";
+  | "FullStack"
+  | "TailwindCSS"
+  | "FrontendMentor";

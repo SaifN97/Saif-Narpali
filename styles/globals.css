@@ -14,3 +14,8 @@ body {
   height: 0px;
   /* height 0:  hide the horizontal scrollbar */
 }
+
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #14b8a6;
+}

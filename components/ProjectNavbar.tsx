@@ -22,13 +22,16 @@ const ProjectNavbar: FunctionComponent<{
   active: string;
 }> = (props) => {
   return (
-    <nav className="flex px-3 py-2 space-x-3 overflow-x-auto list-none">
+    <nav className="flex px-5 py-2 space-x-3 overflow-x-scroll list-none">
       <NavItem value="all" {...props} />
-      <NavItem value="React.js" {...props} />
       <NavItem value="Vanilla" {...props} />
+      <NavItem value="React.js" {...props} />
       <NavItem value="Next.js" {...props} />
       <NavItem value="Redux" {...props} />
-      <NavItem value="Sanity" {...props} />
+      <NavItem value="API" {...props} />
+      <NavItem value="FullStack" {...props} />
+      <NavItem value="TailwindCSS" {...props} />
+      <NavItem value="FrontendMentor" {...props} />
     </nav>
   );
 };
