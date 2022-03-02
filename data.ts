@@ -98,14 +98,15 @@ export const tools: Skill[] = [
   },
   {
     Icon: BsCircleFill,
-    name: "Chrome Dev Tools",
+    name: "Dev Tools",
     level: "80",
   },
   {
     Icon: BsCircleFill,
-    name: "TypeScript",
-    level: "40",
+    name: "SASS",
+    level: "85",
   },
+
   {
     Icon: BsCircleFill,
     name: "NPM",

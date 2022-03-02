@@ -1,26 +1,6 @@
-import { useState, useEffect, FunctionComponent } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-
-const NavItem: FunctionComponent<{
-  active: string;
-  setActive: Function;
-  name: string;
-  route: string;
-}> = ({ active, setActive, name, route }) => {
-  return active !== name ? (
-    <Link href={route}>
-      <a>
-        <span
-          className="mx-2 cursor-pointer hover:border-b-4 border-b-teal-500 hover:text-teal-600"
-          onClick={() => setActive(name)}
-        >
-          {name}
-        </span>
-      </a>
-    </Link>
-  ) : null;
-};
 
 const Navbar = () => {
   const { pathname } = useRouter();
@@ -35,25 +15,44 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="flex items-center justify-between px-5 py-3 my-2">
-      <span className="text-xl font-bold text-teal-500 border-b-4 border-teal-500 md:text-2xl">
-        {active}
-      </span>
-
-      <div className="text-base font-normal md:text-xl">
-        <NavItem active={active} setActive={setActive} name="About" route="/" />
-        <NavItem
-          active={active}
-          setActive={setActive}
-          name="Skills"
-          route="/skills"
-        />
-        <NavItem
-          active={active}
-          setActive={setActive}
-          name="Projects"
-          route="/projects"
-        />
+    <div className="my-2 border-b-2 border-gray-200 dark:border-black-700">
+      <div className="flex items-center justify-around gap-4 px-5 py-3 text-base font-normal md:text-xl">
+        <Link href="/">
+          <a
+            onClick={() => setActive("About")}
+            className={`text-xl font-bold  hover:text-teal-600 md:text-2xl ${
+              active === "About"
+                ? "text-teal-500 border-b-4 border-teal-500"
+                : ""
+            }`}
+          >
+            About
+          </a>
+        </Link>
+        <Link href="/skills">
+          <a
+            onClick={() => setActive("Skills")}
+            className={`text-xl font-bold  hover:text-teal-600 md:text-2xl ${
+              active === "Skills"
+                ? "text-teal-500 border-b-4 border-teal-500"
+                : ""
+            }`}
+          >
+            Skills
+          </a>
+        </Link>
+        <Link href="/projects">
+          <a
+            onClick={() => setActive("Projects")}
+            className={`text-xl font-bold  hover:text-teal-600 md:text-2xl ${
+              active === "Projects"
+                ? "text-teal-500 border-b-4 border-teal-500"
+                : ""
+            }`}
+          >
+            Projects
+          </a>
+        </Link>
       </div>
     </div>
   );

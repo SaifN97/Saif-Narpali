@@ -6,9 +6,9 @@ const NavItem: FunctionComponent<{
   active: string;
   handleFilterCategory: Function;
 }> = ({ value, active, handleFilterCategory }) => {
-  var className =
-    "font-semibold capitalize cursor-pointer hover:text-teal-500 ";
-  if (active === value) className += " text-teal-500 ";
+  var className = "font-semibold capitalize cursor-pointer hover:text-teal-500";
+  if (active === value)
+    className += "border-b-2 border-teal-500 text-teal-500 ";
 
   return (
     <li className={className} onClick={() => handleFilterCategory(value)}>

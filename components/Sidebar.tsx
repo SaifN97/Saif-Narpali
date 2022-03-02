@@ -88,11 +88,15 @@ const Sidebar = () => {
             {/*  line  */}
             <div className="block h-8 rounded-full bg-slate-700 w-14"></div>
             {/*  dot */}
-            <div className="absolute w-6 h-6 transition bg-white rounded-full dot left-1 top-1"></div>
+            <div
+              className={`absolute w-6 h-6 transition ${
+                theme === "dark" && "translate-x-full bg-teal-500"
+              } bg-white rounded-full dot left-1 top-1`}
+            ></div>
           </div>
           {/* label  */}
           <div className="ml-2 font-medium text-slate-700 dark:text-white">
-            {theme === "light" ? "Dark Mode" : "Light Mode"}
+            Dark Mode
           </div>
         </label>
       </div>
