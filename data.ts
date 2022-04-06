@@ -98,13 +98,13 @@ export const tools: Skill[] = [
   },
   {
     Icon: BsCircleFill,
-    name: "Dev Tools",
-    level: "80",
+    name: "TypeScript",
+    level: "70",
   },
   {
     Icon: BsCircleFill,
-    name: "SASS",
-    level: "85",
+    name: "Chakra UI",
+    level: "60",
   },
 
   {
@@ -114,8 +114,8 @@ export const tools: Skill[] = [
   },
   {
     Icon: BsCircleFill,
-    name: "Windows",
-    level: "90",
+    name: "Dev Tools",
+    level: "80",
   },
 ];
 
@@ -141,6 +141,18 @@ export const projects: IProject[] = [
     category: ["React.js", "Redux", "API"],
     description: "NotYouTube is almost YouTube powered using YouTube API",
     key_techs: ["React", "Redux", "Axios", "Firebase", "YouTubeAPI"],
+  },
+
+  {
+    id: 18,
+    name: "Airbnb Clone",
+    image_path: "/images/next/airbnb.png",
+    deployed_url: "https://airbnb-clone-saifn97.vercel.app",
+    github_url: "https://github.com/SaifN97/airbnb-clone",
+    category: ["Next.js", "React.js", "TailwindCSS"],
+    description:
+      "This project is a clone attempt of airbnb website with TailwindCSS. Integrated with maps powered by MapBox Studio",
+    key_techs: ["React.js", "Next.js", "TailwindCSS", "Sanity"],
   },
 
   {
@@ -326,4 +338,6 @@ export const projects: IProject[] = [
     description: "This was a challenge project from frontendMentor.io",
     key_techs: ["HTML", "SCSS", "JavaScript", "CSS Custom properties"],
   },
+
+  //18 ids in total
 ];
