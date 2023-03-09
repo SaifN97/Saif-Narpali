@@ -103,8 +103,8 @@ export const tools: Skill[] = [
   },
   {
     Icon: BsCircleFill,
-    name: "Chakra UI",
-    level: "60",
+    name: "Material UI",
+    level: "75",
   },
 
   {
