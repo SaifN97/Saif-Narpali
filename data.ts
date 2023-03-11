@@ -121,7 +121,29 @@ export const tools: Skill[] = [
 
 export const projects: IProject[] = [
   {
-    id: 0,
+    id: 20,
+    name: "Highlands Brain",
+    description:
+      "Highlands Brain is a personalised highly complex School system platform for the school named Highlands Charter which is based in California US. The school actively uses this web application to automate all their day to day tasks with ease including live attendance tracking system, Monthly compliance reports, Student agreements, Chat system for student and staffs interactivity and much more exciting things.",
+    image_path: "/images/next/brain.png",
+    deployed_url: "app.highlandsbrain.com",
+    // github_url: "#",
+    category: ["Next.js", "API"],
+    key_techs: ["React.js", "Next.js", "Material UI", "XANO"],
+  },
+  {
+    id: 19,
+    name: "Dumbits Trivia",
+    description:
+      "Dumbits is a trivia based game app where users can upload video questions and other users can participate to gain points. Later these points will be redeemed against prize offers. The only rule is that the user has to be quick in answering  quiz questions to get more points.The logic being more people play the quiz game, which increases the pot value of credits, which in return gives out more points.",
+    image_path: "/images/next/db.png",
+    deployed_url: "dumbits.com",
+    // github_url: "#",
+    category: ["Next.js", "API"],
+    key_techs: ["React.js", "Next.js", "Material UI", "XANO"],
+  },
+  {
+    id: 18,
     name: "Amazon 2.0",
     description:
       "This is a clone attempt of Amazon.com E-commerce website, integrated with Stripe payments and FakeStore API",
@@ -133,7 +155,7 @@ export const projects: IProject[] = [
   },
 
   {
-    id: 1,
+    id: 17,
     name: "NotYouTube",
     image_path: "/images/react/notyoutube.jpg",
     deployed_url: "https://not-youtube.vercel.app",
@@ -144,7 +166,7 @@ export const projects: IProject[] = [
   },
 
   {
-    id: 18,
+    id: 16,
     name: "Airbnb Clone",
     image_path: "/images/next/airbnb.png",
     deployed_url: "https://airbnb-clone-saifn97.vercel.app",
@@ -156,7 +178,7 @@ export const projects: IProject[] = [
   },
 
   {
-    id: 2,
+    id: 15,
     name: "LinkedIn Clone",
     image_path: "/images/react/linkedin.jpg",
     deployed_url: "https://clonelinkedinsn.netlify.app/",
@@ -168,7 +190,7 @@ export const projects: IProject[] = [
   },
 
   {
-    id: 3,
+    id: 14,
     name: "Graph blog",
     image_path: "/images/react/graphcms.jpg",
     deployed_url: "https://graph-cms-blog-nu.vercel.app",
@@ -180,7 +202,7 @@ export const projects: IProject[] = [
   },
 
   {
-    id: 4,
+    id: 13,
     name: "ShareMe",
     image_path: "/images/react/shareme.jpg",
     deployed_url: "https://nshareme.netlify.app",
@@ -192,7 +214,7 @@ export const projects: IProject[] = [
   },
 
   {
-    id: 5,
+    id: 12,
     name: "Medium 2.0",
     image_path: "/images/next/medium.jpg",
     deployed_url: "https://medium-2-0-saifn97.vercel.app/",
@@ -203,7 +225,7 @@ export const projects: IProject[] = [
   },
 
   {
-    id: 6,
+    id: 11,
     name: "Spotify 2.0",
     image_path: "/images/next/spotify.jpg",
     deployed_url: "https://spotify-2-0-eight.vercel.app",
@@ -215,7 +237,7 @@ export const projects: IProject[] = [
   },
 
   {
-    id: 7,
+    id: 10,
     name: "Cryptoverse",
     image_path: "/images/react/cryptoverse.jpg",
     github_url: "https://github.com/SaifN97/cryptoverse",
@@ -227,7 +249,7 @@ export const projects: IProject[] = [
   },
 
   {
-    id: 8,
+    id: 9,
     name: "Gericht Restaurant",
     image_path: "/images/react/geritch.jpg",
     deployed_url: "https://geritch-resto.netlify.app/",
@@ -239,7 +261,7 @@ export const projects: IProject[] = [
   },
 
   {
-    id: 9,
+    id: 8,
     name: "Realtor",
     image_path: "/images/next/realtor.jpg",
     deployed_url: "https://realtor-saifn97.vercel.app/",
@@ -251,7 +273,7 @@ export const projects: IProject[] = [
   },
 
   {
-    id: 10,
+    id: 7,
     name: "GPT-3 Open AI",
     image_path: "/images/react/gpt3.jpg",
     deployed_url: "https://blogopenaigpt3.netlify.app/",
@@ -262,7 +284,7 @@ export const projects: IProject[] = [
   },
 
   {
-    id: 11,
+    id: 6,
     name: "Blogr",
     image_path: "/images/frontendmentor/blogr.jpg",
     deployed_url: "https://reverent-fermi-c94e80.netlify.app/",
@@ -273,7 +295,7 @@ export const projects: IProject[] = [
   },
 
   {
-    id: 12,
+    id: 5,
     name: "SunnySide",
     image_path: "/images/frontendmentor/sunnyside.jpg",
     deployed_url: "https://vigilant-euler-c3932b.netlify.app/",
@@ -284,7 +306,7 @@ export const projects: IProject[] = [
   },
 
   {
-    id: 13,
+    id: 4,
     name: "Space Tourism",
     image_path: "/images/frontendmentor/space.jpg",
     deployed_url: "https://saifn97-space-tourism.netlify.app/",
@@ -295,7 +317,7 @@ export const projects: IProject[] = [
   },
 
   {
-    id: 14,
+    id: 3,
     name: "Huddle",
     image_path: "/images/frontendmentor/huddle-dark.jpg",
     deployed_url: "https://distracted-booth-c13b35.netlify.app/",
@@ -307,7 +329,7 @@ export const projects: IProject[] = [
   },
 
   {
-    id: 15,
+    id: 2,
     name: "Insure",
     image_path: "/images/frontendmentor/insure.jpg",
     deployed_url: "https://festive-galileo-1ea9f6.netlify.app/",
@@ -318,7 +340,7 @@ export const projects: IProject[] = [
   },
 
   {
-    id: 16,
+    id: 1,
     name: "Flyo",
     image_path: "/images/frontendmentor/fylo-dark.jpg",
     deployed_url: "https://sleepy-euclid-89fe58.netlify.app/",
@@ -329,7 +351,7 @@ export const projects: IProject[] = [
   },
 
   {
-    id: 17,
+    id: 0,
     name: "Clipboard",
     image_path: "/images/frontendmentor/clipboard.jpg",
     deployed_url: "https://priceless-lamarr-be16c6.netlify.app/",
@@ -338,6 +360,4 @@ export const projects: IProject[] = [
     description: "This was a challenge project from frontendMentor.io",
     key_techs: ["HTML", "SCSS", "JavaScript", "CSS Custom properties"],
   },
-
-  //18 ids in total
 ];

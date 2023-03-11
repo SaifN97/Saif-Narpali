@@ -63,13 +63,15 @@ const ProjectCard: FunctionComponent<{
               variants={fadeInUp}
               className="flex justify-center my-4 space-x-3"
             >
-              <a
-                href={github_url}
-                target="_blank"
-                className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-300 rounded-sm dark:bg-black-500 rounded-tr-2xl rounded-bl-2xl"
-              >
-                <AiFillGithub /> <span>Github</span>
-              </a>
+              {github_url && (
+                <a
+                  href={github_url}
+                  target="_blank"
+                  className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-300 rounded-sm dark:bg-black-500 rounded-tr-2xl rounded-bl-2xl"
+                >
+                  <AiFillGithub /> <span>Github</span>
+                </a>
+              )}
               <a
                 href={deployed_url}
                 target="_blank"
