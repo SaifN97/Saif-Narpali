@@ -56,22 +56,22 @@ export const languages: Skill[] = [
   {
     Icon: BsCircleFill,
     name: "HTML",
-    level: "90",
+    level: "95",
   },
   {
     Icon: BsCircleFill,
     name: "CSS",
-    level: "90",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "TailwindCSS",
-    level: "70",
+    level: "95",
   },
   {
     Icon: BsCircleFill,
     name: "Javascript",
     level: "80",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Typescript",
+    level: "70",
   },
   {
     Icon: BsCircleFill,
@@ -81,7 +81,7 @@ export const languages: Skill[] = [
   {
     Icon: BsCircleFill,
     name: "Next.js",
-    level: "60",
+    level: "70",
   },
 ];
 
@@ -89,17 +89,17 @@ export const tools: Skill[] = [
   {
     Icon: BsCircleFill,
     name: "VsCode",
-    level: "90",
+    level: "95",
   },
   {
     Icon: BsCircleFill,
     name: "Git",
-    level: "65",
+    level: "80",
   },
   {
     Icon: BsCircleFill,
-    name: "TypeScript",
-    level: "70",
+    name: "React Query",
+    level: "80",
   },
   {
     Icon: BsCircleFill,
@@ -136,7 +136,7 @@ export const projects: IProject[] = [
     name: "Dumbits Trivia",
     description:
       "Dumbits is a trivia based game app where users can upload video questions and other users can participate to gain points. Later these points will be redeemed against prize offers. The only rule is that the user has to be quick in answering  quiz questions to get more points.The logic being more people play the quiz game, which increases the pot value of credits, which in return gives out more points.",
-    image_path: "/images/next/db.png",
+    image_path: "/images/next/db.jpg",
     deployed_url: "dumbits.com",
     // github_url: "#",
     category: ["Next.js", "API"],

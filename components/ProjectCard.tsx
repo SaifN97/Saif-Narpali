@@ -32,7 +32,7 @@ const ProjectCard: FunctionComponent<{
         alt={name}
         layout="responsive"
         width={300}
-        height={150}
+        height={160}
         objectFit="cover"
         objectPosition="top"
         onClick={() => setShowDetail(id)}
@@ -54,7 +54,7 @@ const ProjectCard: FunctionComponent<{
                 className="overflow-hidden rounded-tr-2xl rounded-bl-2xl"
                 layout="responsive"
                 width={300}
-                height={150}
+                height={160}
                 objectFit="cover"
                 objectPosition="center"
               />
